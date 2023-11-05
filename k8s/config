@@ -12,3 +12,14 @@ contexts:
 current-context: yc-rsoi-project
 kind: Config
 preferences: {}
+users:
+- name: yc-managed-k8s-caticqlchgc6ak8jk4tm
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - k8s
+      - create-token
+      - --profile=default
+      env: null
+      provideClusterInfo: false
