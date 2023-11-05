@@ -40,7 +40,7 @@ jobs:
         run: mkdir $HOME/.kube
 
       - name: Send YC config to K8S
-        run: cp ./k8s/config $HOME/nottoday/.kube/config
+        run: cp ./k8s/config $HOME/.kube/config
 
       - name: Deploy DB to YC
         run: helm install databases k8s/postgres-chart
