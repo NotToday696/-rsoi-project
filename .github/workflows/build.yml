@@ -33,6 +33,21 @@ jobs:
       - name: Docker Push
         run: docker-compose push
 
+      - name: Install Kubectl
+        uses: Azure/setup-kubectl@v3.1
+
+      - name: Create .kube folder
+        run: mkdir $HOME/.kube
+
+      - name: Send YC config to K8S
+        run: cp ./k8s/config $HOME/.kube/config
+
+      - name: Deploy DB to YC
+        run: helm install databases k8s/postgres-chart
+
+      - name: Deploy Services to YC
+        run: helm install services k8s/services-chart
+
 #      - name: Build and push services
 #        run: |
 #          docker build -t ${{ secrets.GATEWAY_SERVICE_IMAGE }} gateway_service && docker push ${{ secrets.GATEWAY_SERVICE_IMAGE }}

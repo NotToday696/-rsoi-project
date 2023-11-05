@@ -1,4 +1,4 @@
-domain: puzanovim.com
+domain: ntd.ru
 service:
   port: 8081
   profile: k8s
