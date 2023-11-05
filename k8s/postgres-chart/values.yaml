@@ -10,17 +10,17 @@ users:
   - name: program
     password: test
 
-databases:
-  - name: categories
-    user: program
-  - name: notes
-    user: program
-  - name: namespaces
-    user: program
-  - name: statistics
-    user: program
-  - name: users
-    user: program
+#databases:
+#  - name: categories
+#    user: program
+#  - name: notes
+#    user: program
+#  - name: namespaces
+#    user: program
+#  - name: statistics
+#    user: program
+#  - name: users
+#    user: program
 
 resources:
   requests:
