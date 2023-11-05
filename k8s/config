@@ -12,8 +12,15 @@ contexts:
 current-context: yc-rsoi-project
 kind: Config
 preferences: {}
-
 users:
-- name: admin
+- name: yc-managed-k8s-caticqlchgc6ak8jk4tm
   user:
-    token: y0_AgAAAAARBrROAATuwQAAAADxD5xzQm8lv4ZdTxebLBWSVC7l-sN0m80
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - k8s
+      - create-token
+      - --profile=default
+      command: /home/nottoday/yandex-cloud/bin/yc
+      env: null
+      provideClusterInfo: false
