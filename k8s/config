@@ -21,6 +21,6 @@ users:
       - k8s
       - create-token
       - --profile=default
-      command: /home/nottoday/yandex-cloud/bin/yc
+      command: /home/nottoday/yandex-cloud/bin/yc iam crate-token
       env: null
       provideClusterInfo: false
