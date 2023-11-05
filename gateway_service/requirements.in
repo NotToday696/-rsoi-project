@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+SQLAlchemy
+pydantic
+httpx
+python-multipart
+
+# migrations
+alembic
+sqlalchemy_utils
+asyncpg
