@@ -33,15 +33,15 @@ jobs:
       - name: Docker Push
         run: docker-compose push
 
-      - name: Build and push services
-        run: |
-          docker build -t ${{ secrets.GATEWAY_SERVICE_IMAGE }} gateway_service && docker push ${{ secrets.GATEWAY_SERVICE_IMAGE }}
-          docker build -t ${{ secrets.CATEGORY_SERVICE_IMAGE }} category_service && docker push ${{ secrets.CATEGORY_SERVICE_IMAGE }}
-          docker build -t ${{ secrets.IDENTITY_PROVIDER_IMAGE }} identity_provider && docker push ${{ secrets.IDENTITY_PROVIDER_IMAGE }}
-          docker build -t ${{ secrets.NAMESPACE_SERVICE_IMAGE }} namespace_service && docker push ${{ secrets.NAMESPACE_SERVICE_IMAGE }}
-          docker build -t ${{ secrets.NOTES_SERVICE_IMAGE }} notes_service && docker push ${{ secrets.NOTES_SERVICE_IMAGE }}
-          docker build -t ${{ secrets.STATISTIC_SERVICE_IMAGE }} statistic_service && docker push ${{ secrets.STATISTIC_SERVICE_IMAGE }}
-          docker build -t ${{ secrets.FRONTEND_IMAGE }} frontend && docker push ${{ secrets.FRONTEND_IMAGE }}
+#      - name: Build and push services
+#        run: |
+#          docker build -t ${{ secrets.GATEWAY_SERVICE_IMAGE }} gateway_service && docker push ${{ secrets.GATEWAY_SERVICE_IMAGE }}
+#          docker build -t ${{ secrets.CATEGORY_SERVICE_IMAGE }} category_service && docker push ${{ secrets.CATEGORY_SERVICE_IMAGE }}
+#          docker build -t ${{ secrets.IDENTITY_PROVIDER_IMAGE }} identity_provider && docker push ${{ secrets.IDENTITY_PROVIDER_IMAGE }}
+#          docker build -t ${{ secrets.NAMESPACE_SERVICE_IMAGE }} namespace_service && docker push ${{ secrets.NAMESPACE_SERVICE_IMAGE }}
+#          docker build -t ${{ secrets.NOTES_SERVICE_IMAGE }} notes_service && docker push ${{ secrets.NOTES_SERVICE_IMAGE }}
+#          docker build -t ${{ secrets.STATISTIC_SERVICE_IMAGE }} statistic_service && docker push ${{ secrets.STATISTIC_SERVICE_IMAGE }}
+#          docker build -t ${{ secrets.FRONTEND_IMAGE }} frontend && docker push ${{ secrets.FRONTEND_IMAGE }}
 
 #      - name: Deploy
 #        run: |
