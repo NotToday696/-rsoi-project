@@ -21,6 +21,6 @@ users:
       - k8s
       - create-token
       - --profile=default
-      command: /home/nottoday/yandex-cloud/bin/yc iam crate-token
+      command: C:\Users\Admin\yandex-cloud\bin\yc.exe
       env: null
       provideClusterInfo: false
